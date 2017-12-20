@@ -1,3 +1,4 @@
-# Best Bulgarian Movies - ASP .NET Core MVC Web Application with Entity Framework Core.
+# Best Bulgarian Movies 
+ASP .NET Core MVC Web Application with Entity Framework Core.
 
-This is catalog for best Bulgarian movies you must see before you die...
+This is catalog with reviews for best Bulgarian movies you must see before you die...
