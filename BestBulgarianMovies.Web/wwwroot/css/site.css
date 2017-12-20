@@ -2,7 +2,7 @@
     padding-top: 50px;
     padding-bottom: 20px;
     font: 10pt Verdana, Arial, sans-serif;
-    background-image: url(/images/1.jpg);
+    background-image: url(/images/grunge_bulgarian_flag_by_thedrake92-d1xc3rx.jpg);
     color: #fff;
     overflow-wrap: break-word;
 }
@@ -122,4 +122,14 @@
 .form-default {
     color: white;
     background: linear-gradient(to bottom, #646464 0%,#0e0e0e 100%);
+}
+
+.text-danger {
+    color: yellow;
+    font-weight: bold;
+}
+
+.text-default {
+    color: darkblue;
+    font-weight: bold;
 }

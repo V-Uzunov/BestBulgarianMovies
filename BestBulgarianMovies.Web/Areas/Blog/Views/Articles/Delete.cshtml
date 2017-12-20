@@ -5,8 +5,8 @@
 
 
 <div class="row form-default">
-    <h2>@ViewData["Title"]</h2>
-    <div class="col-md-8">
+    <h2 class="text-default">@ViewData["Title"]</h2>
+    <div class="col-md-8 form-default">
         <form method="post" action="/blog/articles/destroy/@Model.Id">
             <div class="form-group">
                 <label asp-for="Title"></label>

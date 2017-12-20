@@ -59,7 +59,7 @@
                                 Birthdate = DateTime.UtcNow
                             };
 
-                            await userManager.CreateAsync(adminUser, "------");
+                            await userManager.CreateAsync(adminUser, "admin12");
 
                             await userManager.AddToRoleAsync(adminUser, adminName);
                         }

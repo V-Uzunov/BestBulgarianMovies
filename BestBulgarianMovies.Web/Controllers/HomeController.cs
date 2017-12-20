@@ -25,18 +25,18 @@
                Movies = await this.movies.AllMovieAsync()
            });
 
-        public async Task<IActionResult> Search(SearchFormModel model)
+        public async Task<IActionResult> Search(SearchViewModel model)
         {
-            var viewModel = new SearchViewModel
-            {
-                SearchText = model.SearchText
-            };
+            //var viewModel = new SearchViewModel
+            //{
+            //    SearchText = model.SearchText
+            //};
 
-            viewModel.Movies = await this.movies.FindAsync(model.SearchText);
+            model.Movies = await this.movies.FindAsync(model.SearchText);
 
-            viewModel.Articles = await this.articles.FindAsync(model.SearchText);
+            model.Articles = await this.articles.FindAsync(model.SearchText);
 
-            return View(viewModel);
+            return View(model);
         }
 
         public IActionResult Error()

@@ -2,13 +2,14 @@
 {
     using BestBulgarianMovies.Services;
     using BestBulgarianMovies.Services.Models.Articles;
-    using BestBulgarianMovies.Web.Models.Home;
     using System;
     using System.Collections.Generic;
 
-    public class ArticleListingViewModel : SearchFormModel
+    public class ArticleListingViewModel
     {
         public IEnumerable<ArticlesListingServiceModel> Articles { get; set; }
+
+        public string SearchText { get; set; }
 
         public int TotalArticles { get; set; }
 

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestBulgarianMovies.Web", "BestBulgarianMovies.Web\BestBulgarianMovies.Web.csproj", "{77FA4338-06DD-4B20-B2D3-3DDA41493A4B}"
 EndProject
@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestBulgarianMovies.Data", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestBulgarianMovies.Common", "BestBulgarianMovies.Common\BestBulgarianMovies.Common.csproj", "{A2540BF0-F8AF-4D1B-A7CD-4BDCA7CF69C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestBulgarianMovies.Services", "BestBulgarianMovies.Services\BestBulgarianMovies.Services.csproj", "{EB936021-C4A8-4A70-8487-2D1866C160B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestBulgarianMovies.Services", "BestBulgarianMovies.Services\BestBulgarianMovies.Services.csproj", "{EB936021-C4A8-4A70-8487-2D1866C160B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestBulgarianMovies.Tests", "BestBulgarianMovies.Tests\BestBulgarianMovies.Tests.csproj", "{BC0BC71C-A281-47CB-8B71-0E3164B107AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EB936021-C4A8-4A70-8487-2D1866C160B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB936021-C4A8-4A70-8487-2D1866C160B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB936021-C4A8-4A70-8487-2D1866C160B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC0BC71C-A281-47CB-8B71-0E3164B107AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC0BC71C-A281-47CB-8B71-0E3164B107AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC0BC71C-A281-47CB-8B71-0E3164B107AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC0BC71C-A281-47CB-8B71-0E3164B107AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

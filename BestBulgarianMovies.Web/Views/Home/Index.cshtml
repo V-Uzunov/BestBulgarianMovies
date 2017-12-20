@@ -13,10 +13,11 @@
             <button type="submit" class="btn btn-edited pull-right"><span class="glyphicon glyphicon-search"></span> Search</button>
         </div>
         <div class="col-md-4 pull-right">
-            <input asp-for="SearchText" class="form-control" placeholder="Search..." />
+            <input required asp-for="SearchText" class="form-control" placeholder="Search..." />
         </div>
     </form>
 </div>
+<br/>
 
 <div class="row movies-listings">
     @Html.Partial("_MovieListingPartial", Model.Movies)
