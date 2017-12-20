@@ -19,7 +19,7 @@
         {
             builder
                 .Entity<UserMovie>()
-                .HasKey(um => new {  um.UserId, um.MovieId});
+                .HasKey(um => new { um.UserId, um.MovieId });
 
             builder
                 .Entity<UserMovie>()
@@ -41,7 +41,6 @@
                 .WithMany(a => a.Articles)
                 .HasForeignKey(a => a.AuthorId)
                 .OnDelete(DeleteBehavior.Cascade);
-            
 
             base.OnModelCreating(builder);
         }

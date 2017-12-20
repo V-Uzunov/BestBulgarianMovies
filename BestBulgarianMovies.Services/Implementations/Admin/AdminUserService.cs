@@ -2,7 +2,6 @@
 {
     using AutoMapper.QueryableExtensions;
     using BestBulgarianMovies.Data;
-    using BestBulgarianMovies.Data.Models;
     using BestBulgarianMovies.Services.Interfaces.Admin;
     using BestBulgarianMovies.Services.Models.Admin;
     using Microsoft.EntityFrameworkCore;

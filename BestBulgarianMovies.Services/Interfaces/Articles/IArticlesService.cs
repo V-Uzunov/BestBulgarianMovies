@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using BestBulgarianMovies.Services.Models.Articles;
-using BestBulgarianMovies.Services.Models.Blog;
-
-namespace BestBulgarianMovies.Services.Interfaces.Articles
+﻿namespace BestBulgarianMovies.Services.Interfaces.Articles
 {
+    using BestBulgarianMovies.Services.Models.Articles;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+
     public interface IArticlesService
     {
         Task<IEnumerable<ArticlesListingServiceModel>> FindAsync(string searchText);

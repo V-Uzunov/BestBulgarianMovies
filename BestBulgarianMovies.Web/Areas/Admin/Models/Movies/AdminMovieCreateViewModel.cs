@@ -13,7 +13,7 @@
         public string Title { get; set; }
 
         [Required]
-        [MinLength(DataConstants.MovieDescriptionMinLenght, ErrorMessage ="Description minimum length is 50")]
+        [MinLength(DataConstants.MovieDescriptionMinLenght, ErrorMessage = "Description minimum length is 50")]
         public string Description { get; set; }
 
         [Display(Name = "Age Restriction")]
@@ -36,7 +36,7 @@
         [MaxLength(DataConstants.MovieVideoIdMinAndMaxLenght)]
         [Display(Name = "Video ID")]
         public string VideoId { get; set; }
-        
+
         [MaxLength(DataConstants.MovieThumbnailUrlMaxLenght, ErrorMessage = "Thumbnail URL maximum length is 2047")]
         [Display(Name = "Thumbnail URL")]
         public string ThumbnailUrl { get; set; }

@@ -45,6 +45,7 @@
                 Roles = roles
             });
         }
+
         //POST: /Admin/Users/AddToRole
         [HttpPost]
         public async Task<IActionResult> AddToRole(AddUserToRoleFormModel model)
@@ -83,10 +84,10 @@
             return View(new UserDeleteForm
             {
                 Id = findUser.Id,
-                Name= findUser.Name,
-                Username= findUser.UserName,
-                Birthdate= findUser.Birthdate,
-                Email= findUser.Email
+                Name = findUser.Name,
+                Username = findUser.UserName,
+                Birthdate = findUser.Birthdate,
+                Email = findUser.Email
             });
         }
 

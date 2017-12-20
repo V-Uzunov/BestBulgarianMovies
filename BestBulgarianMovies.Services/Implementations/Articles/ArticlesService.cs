@@ -1,14 +1,13 @@
 ﻿namespace BestBulgarianMovies.Services.Implementations.Articles
 {
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
     using AutoMapper.QueryableExtensions;
     using BestBulgarianMovies.Data;
     using BestBulgarianMovies.Services.Interfaces.Articles;
     using BestBulgarianMovies.Services.Models.Articles;
-    using BestBulgarianMovies.Services.Models.Blog;
     using Microsoft.EntityFrameworkCore;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
 
     public class ArticlesService : IArticlesService
     {
@@ -30,7 +29,6 @@
                 .ProjectTo<ArticlesListingServiceModel>()
                 .ToListAsync();
         }
-
 
         public async Task<IEnumerable<ArticlesListingServiceModel>> AllAsync(int page = 1)
             => await this.db

@@ -1,6 +1,5 @@
 ﻿namespace BestBulgarianMovies.Web.Areas.Blog.Controllers
 {
-    using Web.Controllers;
     using Data.Models;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
@@ -28,7 +27,7 @@
             this.userManager = userManager;
             this.html = html;
         }
-        
+
         //GET: /Blog/Articles/Create
         public IActionResult Create()
             => this.View();
@@ -46,7 +45,7 @@
 
             var userId = this.userManager.GetUserId(User);
 
-            await this.articles.CreateAsync(model.Title, model.Content, model.ThumbnailUrl,  userId);
+            await this.articles.CreateAsync(model.Title, model.Content, model.ThumbnailUrl, userId);
 
             return RedirectToAction(
                 nameof(Web.Controllers.ArticlesController.Index),

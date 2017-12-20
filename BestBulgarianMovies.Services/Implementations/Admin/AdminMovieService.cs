@@ -31,15 +31,15 @@
         {
             var movie = new Movie
             {
-                Title=title,
-                Description=description,
-                AgeRestriction=ageRestriction,
-                ReleaseDate=releaseDate,
-                Director=director,
-                Cast=cast,
-                Genre=genre,
-                VideoId=videoId,
-                ThumbnailUrl=thumbnailUrl
+                Title = title,
+                Description = description,
+                AgeRestriction = ageRestriction,
+                ReleaseDate = releaseDate,
+                Director = director,
+                Cast = cast,
+                Genre = genre,
+                VideoId = videoId,
+                ThumbnailUrl = thumbnailUrl
             };
 
             await this.db.Movies.AddAsync(movie);
@@ -66,7 +66,7 @@
             DateTime releaseDate,
             string director,
             string cast,
-            GenreTypes genre, 
+            GenreTypes genre,
             string videoId,
             string thumbnailUrl)
         {

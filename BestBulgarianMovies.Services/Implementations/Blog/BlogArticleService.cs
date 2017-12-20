@@ -7,7 +7,6 @@
     using BestBulgarianMovies.Services.Models.Blog;
     using Microsoft.EntityFrameworkCore;
     using System;
-    using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
 
@@ -19,7 +18,7 @@
         {
             this.db = db;
         }
-        
+
         public async Task<BlogArticleDetailsServiceModel> ById(int id)
             => await this.db
                 .Articles
@@ -33,7 +32,7 @@
             {
                 Title = title,
                 Content = content,
-                ThumbnailUrl=thumbnailUrl,
+                ThumbnailUrl = thumbnailUrl,
                 PublishDate = DateTime.UtcNow,
                 AuthorId = authorId
             };

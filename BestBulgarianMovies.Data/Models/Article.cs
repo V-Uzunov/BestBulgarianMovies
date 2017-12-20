@@ -15,7 +15,7 @@
         [Required]
         [MinLength(DataConstants.ArticleContentMinLenght)]
         public string Content { get; set; }
-        
+
         [Required]
         [MaxLength(DataConstants.ArticleThumbnailMaxLenght)]
         public string ThumbnailUrl { get; set; }

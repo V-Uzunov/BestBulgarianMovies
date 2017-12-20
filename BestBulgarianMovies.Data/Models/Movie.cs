@@ -16,7 +16,7 @@
         [Required]
         [MinLength(DataConstants.MovieDescriptionMinLenght)]
         public string Description { get; set; }
-        
+
         [MaxLength(DataConstants.MovieAgeRestrictionMax)]
         public int? AgeRestriction { get; set; }
 

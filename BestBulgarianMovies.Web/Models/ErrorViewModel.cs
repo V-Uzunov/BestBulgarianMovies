@@ -1,5 +1,3 @@
-using System;
-
 namespace BestBulgarianMovies.Web.Models
 {
     public class ErrorViewModel

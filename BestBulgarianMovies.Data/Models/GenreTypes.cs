@@ -1,7 +1,5 @@
 ﻿namespace BestBulgarianMovies.Data.Models
 {
-    using System;
-    
     public enum GenreTypes
     {
         Horror = 0,

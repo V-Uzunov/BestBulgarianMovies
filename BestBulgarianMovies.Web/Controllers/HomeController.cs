@@ -18,7 +18,7 @@
             this.movies = movies;
             this.articles = articles;
         }
-        
+
         public async Task<IActionResult> Index()
            => View(new HomeIndexViewModel
            {

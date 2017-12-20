@@ -2,7 +2,6 @@
 {
     using BestBulgarianMovies.Data.Models;
     using BestBulgarianMovies.Services.Interfaces.Articles;
-    using BestBulgarianMovies.Services.Interfaces.Blog;
     using BestBulgarianMovies.Web.Models.Articles;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
