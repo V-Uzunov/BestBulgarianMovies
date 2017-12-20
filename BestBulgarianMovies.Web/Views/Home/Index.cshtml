@@ -1,0 +1,23 @@
+﻿@model HomeIndexViewModel
+
+@{
+    ViewData["Title"] = "Movies";
+}
+
+<div class="jumbotron home-jumbotron">
+    <h2 class="text-center">Best <span style="color:green">Bulgarian</span> <span style="color:red">Movies</span></h2>
+</div>
+<div class="row">
+    <form asp-action="Search">
+        <div class="col-md-1 pull-right">
+            <button type="submit" class="btn btn-edited pull-right"><span class="glyphicon glyphicon-search"></span> Search</button>
+        </div>
+        <div class="col-md-4 pull-right">
+            <input asp-for="SearchText" class="form-control" placeholder="Search..." />
+        </div>
+    </form>
+</div>
+
+<div class="row movies-listings">
+    @Html.Partial("_MovieListingPartial", Model.Movies)
+</div>

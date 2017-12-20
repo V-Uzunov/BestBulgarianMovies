@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ArticlesListingServiceModel>
+
+<div class="row article-listing">
+
+    @foreach (var article in Model)
+    {
+        <div class="col-sm-4 thumbnail home-thumbnail custom-card">
+            <div class="card text-center">
+                <div class="card-block">
+                    <h3 class="card-title">@article.Title</h3>
+                    <div class="card-text-center">
+                        <img src="@article.ThumbnailUrl" class="img-responsive img-fluid img-center" />
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><b>Release Date:</b> @article.PublishDate.ToShortDateString()</li>
+                            <li class="list-group-item"><b>Author:</b> @article.Author</li>
+                            @{
+                                var subContent = article.Content.Substring(0, 50);
+                            }
+                            <li class="list-group-item"><b>Content:</b> @Html.Raw(subContent)...</li>
+                        </ul>
+                        <div class="card-footer">
+                            <a class="btn btn-edited" asp-controller="Articles" asp-action="Details" asp-route-id="@article.Id">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

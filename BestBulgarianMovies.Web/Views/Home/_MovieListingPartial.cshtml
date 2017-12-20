@@ -1,0 +1,27 @@
+﻿@model IEnumerable<MovieListingServiceModel>
+
+@foreach (var movies in Model)
+{
+    <div class="col-sm-4 thumbnail home-thumbnail custom-card">
+        <div class="card text-center">
+            <div class="card-block">
+                <h3 class="card-title">@movies.Title</h3>
+                <div class="card-text-center">
+                    <img src="@movies.ThumbnailUrl" class="img-responsive img-fluid img-center" />
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><b>Release Date:</b> @movies.ReleaseDate.ToShortDateString()</li>
+                        <li class="list-group-item"><b>Director:</b> @movies.Director</li>
+                        <li class="list-group-item"><b>Genre:</b> @movies.Genre</li>
+                        @{
+                            var subDescript = movies.Description.Substring(0, 50);
+                        }
+                        <li class="list-group-item"><b>Description:</b> @subDescript...</li>
+                    </ul>
+                    <div class="card-footer">
+                        <a class="btn btn-edited" asp-controller="Movies" asp-action="Details" asp-route-id="@movies.Id">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

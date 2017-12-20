@@ -1,0 +1,60 @@
+﻿@model AdminMovieServiceView
+@{
+    ViewData["Title"] = "Delete movie";
+}
+
+<div class="row form-default">
+    <h2>@ViewData["Title"]</h2>
+    <div class="col-md-4">
+        <form method="post" action="/admin/movies/destroy/@Model.Id">
+            
+            <div class="form-group">
+                <label asp-for="Title"></label>
+                <input disabled asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description"></label>
+                <textarea disabled asp-for="Description" rows="10" class="form-control"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AgeRestriction"></label>
+                <input disabled asp-for="AgeRestriction" class="form-control" />
+                <span asp-validation-for="AgeRestriction" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReleaseDate"></label>
+                <input disabled asp-for="ReleaseDate" class="form-control" />
+                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Director"></label>
+                <input disabled asp-for="Director" class="form-control" />
+                <span asp-validation-for="Director" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cast"></label>
+                <textarea disabled asp-for="Cast" rows="5" class="form-control"></textarea>
+                <span asp-validation-for="Cast" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Genre"></label>
+                <select disabled asp-for="Genre" asp-items="Html.GetEnumSelectList<GenreTypes>()" class="form-control"></select>
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VideoId"></label>
+                <span class="input-group-addon">https://www.youtube.com/watch?v=</span>
+                <input disabled asp-for="VideoId" class="form-control" minlength="11" maxlength="11" />
+            </div>
+            <div class="form-group">
+                <label asp-for="ThumbnailUrl"></label>
+                <input disabled asp-for="ThumbnailUrl" class="form-control" />
+                <span asp-validation-for="ThumbnailUrl" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-edited">Delete Movie</button>
+        </form>
+    </div>
+
+</div>

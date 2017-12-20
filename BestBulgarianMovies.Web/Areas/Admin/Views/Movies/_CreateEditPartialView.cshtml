@@ -1,0 +1,54 @@
+﻿@model AdminMovieServiceView
+
+<div class="col-md-4 form-default">
+    <form  method="post">
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Title"></label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <textarea asp-for="Description" rows="10" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="AgeRestriction"></label>
+            <input asp-for="AgeRestriction" class="form-control" />
+            <span asp-validation-for="AgeRestriction" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ReleaseDate"></label>
+            <input asp-for="ReleaseDate" class="form-control" />
+            <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Director"></label>
+            <input asp-for="Director" class="form-control" />
+            <span asp-validation-for="Director" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Cast"></label>
+            <textarea asp-for="Cast" rows="5" class="form-control"></textarea>
+            <span asp-validation-for="Cast" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Genre"></label>
+            <select asp-for="Genre" asp-items="Html.GetEnumSelectList<GenreTypes>()" class="form-control"></select>
+            <span asp-validation-for="Genre" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="VideoId"></label>
+            <span class="input-group-addon">https://www.youtube.com/watch?v=</span>
+            <input asp-for="VideoId" class="form-control" minlength="11" maxlength="11" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ThumbnailUrl"></label>
+            <input asp-for="ThumbnailUrl" class="form-control" />
+            <span asp-validation-for="ThumbnailUrl" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-edited">Save Movie</button>
+    </form>
+</div>

@@ -1,0 +1,33 @@
+﻿@model SearchViewModel
+
+@{
+    ViewData["Title"] = $"Search Results For {Model.SearchText}";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (Model.Movies.Any())
+{
+    <h3>Found Movies</h3>
+
+    <div class="row movies-listings">
+        @await Html.PartialAsync("_MovieListingPartial", Model.Movies)
+    </div>
+}
+else
+{
+    <h3>No movies to show.</h3>
+}
+
+<br />
+
+@if (Model.Articles.Any())
+{
+    <h3>Found articles</h3>
+
+    @Html.Partial("_ArticleListingPartial", Model.Articles)
+}
+else
+{
+    <h3>No articles to show.</h3>
+}

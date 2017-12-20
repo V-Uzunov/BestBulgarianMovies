@@ -1,0 +1,79 @@
+﻿@model MovieDetailsViewModel
+
+@{
+    ViewData["Title"] = $"{Model.Movies.Title}";
+}
+
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-block">
+            <div class="card-text-center">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h3 class="text-center">@ViewData["Title"]</h3>
+                    </li>
+                    <li class="list-group-item container-default">
+                        <b>Movie Trailer:</b>
+                        <div class="embed-responsive embed-responsive-21by9 ">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/@Model.Movies.VideoId" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <b>Release Date:</b> @Model.Movies.ReleaseDate.ToShortDateString()
+                    </li>
+                    <li class="list-group-item">
+                        <b>Director:</b> @Model.Movies.Director
+                    </li>
+                    <li class="list-group-item">
+                        <b>Special Characters:</b> @Model.Movies.Cast
+                    </li>
+                    <li class="list-group-item">
+                        <b>Genre:</b> @Model.Movies.Genre
+                    </li>
+                    <li class="list-group-item">
+                        <b>Age Restriction:</b>
+                        @if (Model.Movies.AgeRestriction == null)
+                        {
+                            @: No
+                        }
+                        @Model.Movies.AgeRestriction
+                    </li>
+                    <li class="list-group-item">
+                        <b>Description:</b> @Model.Movies.Description...
+                    </li>
+                    <li class="list-group-item">
+                        @(Model.Movies.Users == 1 ? $"{Model.Movies.Users} Like" : $"{Model.Movies.Users} Likes")
+                    </li>
+                    <li class="list-group-item">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            @if (Model.ItsLiked)
+                            {
+                                <form asp-action="Dislike" asp-route-id="@Model.Movies.Id" method="post">
+                                    <button type="submit" class="btn btn-edited btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Dislike</button>
+                                </form>
+                            }
+                            else
+                            {
+                                <form asp-action="Like" asp-route-id="@Model.Movies.Id" method="post">
+                                    <button type="submit" class="btn btn-edited btn-lg"><span class="glyphicon glyphicon-thumbs-up "></span> Like</button>
+                                </form>
+                            }
+                        }
+                        else
+                        {
+                            <h3>To like this movie, please <a asp-controller="Account" asp-action="Login" asp-route-returnUrl="@Context.Request.Path">login</a> into your account.</h3>
+                        }
+                    </li>
+                </ul>
+                @if (User.IsInRole(WebConstants.Administrator))
+                {
+                    <div class="text-right">
+                        <a asp-area="Admin" asp-controller="Movies" asp-action="Edit" asp-route-id="@Model.Movies.Id" class="btn btn-edited">Edit</a>
+                        <a href="/admin/movies/delete/@Model.Movies.Id" class="btn btn-edited">Delete</a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
