@@ -12,8 +12,8 @@ using System;
 namespace BestBulgarianMovies.Data.Migrations
 {
     [DbContext(typeof(BestBulgarianMoviesDbContext))]
-    [Migration("20171219120107_DeleteCascade")]
-    partial class DeleteCascade
+    [Migration("20171222095957_EditDeleteInDbContext")]
+    partial class EditDeleteInDbContext
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

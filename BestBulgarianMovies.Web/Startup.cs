@@ -47,15 +47,15 @@
             //Add Facebook Authentication
             services.AddAuthentication().AddFacebook(facebookOptions =>
             {
-                facebookOptions.AppId = "_----------------";
-                facebookOptions.AppSecret = "-_-------------";
+                facebookOptions.AppId = "203135413586790";
+                facebookOptions.AppSecret = "fe219b3e2bebffecfe1a7659382a47d8";
             });
 
             //Add Google Authentication
             services.AddAuthentication().AddGoogle(googleOptions =>
             {
-                googleOptions.ClientId = "-------------.apps.googleusercontent.com";
-                googleOptions.ClientSecret = "-------------++";
+                googleOptions.ClientId = "743114518353-b0ab4ml26kclmdj8hiq5lla8kk5gq1at.apps.googleusercontent.com";
+                googleOptions.ClientSecret = "r3j_zXV9FZ2kSPJCsjOnSYb8";
             });
 
             //Lower Case URL

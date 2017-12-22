@@ -25,15 +25,13 @@
                 .Entity<UserMovie>()
                 .HasOne(u => u.Movie)
                 .WithMany(m => m.Users)
-                .HasForeignKey(u => u.MovieId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .HasForeignKey(u => u.MovieId);
 
             builder
                 .Entity<UserMovie>()
                 .HasOne(m => m.User)
                 .WithMany(u => u.Movies)
-                .HasForeignKey(m => m.UserId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .HasForeignKey(m => m.UserId);
 
             builder
                 .Entity<Article>()
