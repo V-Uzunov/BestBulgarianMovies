@@ -5,7 +5,7 @@ Best Bulgarian Movies is simple movie catalog with reviews, roles and CRUD opera
 
 
  # General Requirements
-The application is implemented using ASP.NET Core framework. Using Visual Studio 2017
+The application is implemented using ASP.NET Core framework. Using Visual Studio 2017 <br />
 •	View Engine for generating the UI – Razor<br />
 •	Using sections and partial views, editor and display templates<br />
 •	Database back-end – Microsoft SQL Server<br />
