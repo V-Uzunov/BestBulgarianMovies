@@ -8,11 +8,11 @@ Best Bulgarian Movies is simple movie catalog with reviews.
 
 o	Use Razor template engine for generating the UI.
 
-	Use sections and partial views.
+		Use sections and partial views.
 
-	Use editor and display templates.
+		Use editor and display templates.
 
-o	You could also make the front-end using JavaScript and consuming a rest service from Web API 
+	o	You could also make the front-end using JavaScript and consuming a rest service from Web API 
 
 •	Use Microsoft SQL Server as database back-end.
 
@@ -22,11 +22,11 @@ o	You could also make the front-end using JavaScript and consuming a rest servic
 
 •	Adapt the default ASP.NET Core site template or get another free theme.
 
-o	Use responsive design based on Twitter Bootstrap/Google Material design.
+	o	Use responsive design based on Twitter Bootstrap/Google Material design.
 
 •	Use the standard ASP.NET Identity System for managing users and roles.
 
-o	Your registered users should have at least one of these roles: user and administrator.
+	o	Your registered users should have at least one of these roles: user and administrator.
 
 •	Write unit tests for your logic, controllers, actions, helpers, etc.
 
@@ -43,15 +43,15 @@ o	Your registered users should have at least one of these roles: user and admini
 #  Additional Requirements
 •	Follow the best practices for Object Oriented design and high-quality code for the Web application:
 
-o	Use data encapsulation.
+	o	Use data encapsulation.
 
-o	Use exception handling properly.
+	o	Use exception handling properly.
 
-o	Use inheritance, abstraction and polymorphism properly.
+	o	Use inheritance, abstraction and polymorphism properly.
 
-o	Follow the principles of strong cohesion and loose coupling.
+	o	Follow the principles of strong cohesion and loose coupling.
 
-o	Correctly format and structure your code, name your identifiers and make the code readable.
+	o	Correctly format and structure your code, name your identifiers and make the code readable.
 
 •	Well looking user interface (UI).
 
@@ -63,4 +63,4 @@ o	Correctly format and structure your code, name your identifiers and make the c
 
 •	Use a source control system by choice, e.g. GitHub, BitBucket.
 
-o	Submit a link to your public source code repository.
+	o	Submit a link to your public source code repository.
