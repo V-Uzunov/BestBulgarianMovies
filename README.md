@@ -14,7 +14,7 @@ The application is implemented using ASP.NET Core framework. Using Visual Studio
 •	Managing users and roles – ASP.NET Identity System<br />
 •	Write unit tests for your logic, controllers, actions, helpers, etc.<br />
 •	Error handling and data validation<br />
-•	Handle correctly the special HTML characters and tags like <br /> and <script> (escape special characters).<br />
+•	Handle correctly the special HTML characters and tags like and <script> (escape special characters).<br />
 •	Dependency Injection<br />
 •	AutoMapping<br />
 •	Prevent from security vulnerabilities like SQL Injection, XSS, CSRF, parameter tampering, etc.<br />
