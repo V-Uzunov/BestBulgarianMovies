@@ -28,8 +28,6 @@ o	Use responsive design based on Twitter Bootstrap/Google Material design.
 
 o	Your registered users should have at least one of these roles: user and administrator.
 
-•	Use AJAX request to asynchronously load and display data somewhere in your application. (optional)
-
 •	Write unit tests for your logic, controllers, actions, helpers, etc.
 
 •	Implement error handling and data validation to avoid crashes when invalid data is entered (both client-side and server-side).
