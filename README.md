@@ -1,5 +1,5 @@
 # Best Bulgarian Movies 
-Best Bulgarian Movies is simple movie catalog with reviews, roles and CRUD operations.
+Best Bulgarian Movies is a movie catalog with reviews, roles and CRUD operations.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/l5wd6uh62t4lg4qd?svg=true)](https://ci.appveyor.com/project/V-Uzunov/bestbulgarianmovies)
 
