@@ -27,11 +27,6 @@
 
         public async Task<IActionResult> Search(SearchViewModel model)
         {
-            //var viewModel = new SearchViewModel
-            //{
-            //    SearchText = model.SearchText
-            //};
-
             model.Movies = await this.movies.FindAsync(model.SearchText);
 
             model.Articles = await this.articles.FindAsync(model.SearchText);
