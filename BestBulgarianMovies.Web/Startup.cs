@@ -24,7 +24,7 @@
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<BestBulgarianMoviesDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), p=> p.UseRowNumberForPaging()));
 
             services
                 .AddIdentity<User, IdentityRole>(options =>
@@ -47,15 +47,15 @@
             //Add Facebook Authentication
             services.AddAuthentication().AddFacebook(facebookOptions =>
             {
-                facebookOptions.AppId = "###################";
-                facebookOptions.AppSecret = "###################";
+                facebookOptions.AppId = "203135413586790";
+                facebookOptions.AppSecret = "fe219b3e2bebffecfe1a7659382a47d8";
             });
 
             //Add Google Authentication
             services.AddAuthentication().AddGoogle(googleOptions =>
             {
-                googleOptions.ClientId = "###################";
-                googleOptions.ClientSecret = "###################";
+                googleOptions.ClientId = "743114518353-b0ab4ml26kclmdj8hiq5lla8kk5gq1at.apps.googleusercontent.com";
+                googleOptions.ClientSecret = "r3j_zXV9FZ2kSPJCsjOnSYb8";
             });
 
             //Lower Case URL
