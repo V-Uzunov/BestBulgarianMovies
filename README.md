@@ -3,7 +3,11 @@ BestBulgarianMovies is a movie catalog with Reviews, Roles and CRUD operations.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/l5wd6uh62t4lg4qd?svg=true)](https://ci.appveyor.com/project/V-Uzunov/bestbulgarianmovies)
 
-
+![Home-1](https://github.com/V-Uzunov/BestBulgarianMovies/blob/master/Screenshots/HomeScreen1.PNG)
+![Home-2](https://github.com/V-Uzunov/BestBulgarianMovies/blob/master/Screenshots/HomeScreen2.PNG)
+![Game-Details](https://github.com/V-Uzunov/BestBulgarianMovies/blob/master/Screenshots/Details.PNG)
+![Admin-Users](https://github.com/V-Uzunov/BestBulgarianMovies/blob/master/Screenshots/Users.PNG)
+![Movie-Reviews](https://github.com/V-Uzunov/BestBulgarianMovies/blob/master/Screenshots/Reviews.PNG)
 
  # General Requirements
 The application is implemented using ASP.NET Framework Core. Using Visual Studio 2017 <br />
